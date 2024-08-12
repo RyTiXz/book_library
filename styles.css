@@ -155,6 +155,10 @@ table {
     border-collapse: collapse;
 }
 
+th {
+    font-size: 1.25rem;
+}
+
 .tableHead {
     border-bottom: 3px solid black;
 }
