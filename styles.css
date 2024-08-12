@@ -147,6 +147,7 @@ table, th, td {
     border: solid black;
     padding: 5px 10px;
     width: 100px;
+    background-color: #84abd0;
 }
 
 table {
