@@ -39,15 +39,12 @@ submitForm.addEventListener('submit', (e) => {
     let author = document.querySelector('#author');
     let pages = document.querySelector('#pages');
     let status = document.querySelector('#status');
-    if (title.value === '' || author.value === '' || pages.value === '') {
-        alert('please fill out all the input fields');
-    } else {
         myLibrary.push(new Book(title.value, author.value, pages.value, status.value));
         clearTable();
         tableEntry();
         clearForm();
         dialog.close()
-    }
+    // }
 });
 
 // Function to handle form reset button //
