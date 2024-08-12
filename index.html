@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Library</title>
+  <link rel='stylesheet' href='styles.css'/>
+</head>
+<body>
+  <div class="content">
+    <div class="header">
+      <h1>Book Library</h1>
+      <button class="openDialog">Add New Book</button>
+      <dialog class="dialog">
+        <form action="" id="submitForm" method="dialog">
+          <div class="bTitle">
+            <label for="title">Book Title:</label>
+            <input type="text" name="title" id="title">
+          </div>
+          <div class="bAuthor">
+            <label for="author">Book Author:</label>
+            <input type="text" name="author" id="author">
+          </div>
+          <div class="bPages">
+            <label for="pages">Number of Pages:</label>
+            <input type="text" name="pages" id="pages">
+          </div>
+          <div class="bStatus">
+            <label for="status">Status</label>
+            <select name="status" id="status">
+              <option value="not started">Not started</option>
+              <option value="reading">Reading</option>
+              <option value="finished">Finished</option>
+            </select>
+          </div>
+          <div class="buttonClass">
+            <div class="bSubmit">
+              <label for="submit"></label>
+              <input type="submit" name="submit" id="submit" value="Add To List">
+            </div>
+            <div class="resetForm">
+              <label for="resetForm"></label>
+              <input type="button" name="resetForm" id="resetForm" value="Clear Form">
+            </div>
+            <div class="exitDialog">
+              <label for="exitDialog"></label>
+              <input type="button" name="exitDialog" id="exitDialog" value="Exit Form">
+            </div>
+          </div>
+        </form>
+      </dialog>
+    </div>
+    <div class="table">
+      <table>
+        <tr class="tableHead">
+          <th>Title</th>
+          <th>Author</th>
+          <th>Pages</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html> 
+
+<!-- TO DO -->
+<!-- style form and table -->
+
+<!-- DONE -->
+<!-- add submit button to form. Submit input to JS -->
+<!-- add change status button. Needs to also change status on Book prototype instance -->
+<!-- look into dialogs and modals for form input -->
