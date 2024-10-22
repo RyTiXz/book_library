@@ -7,15 +7,15 @@ const openDialog = document.querySelector('.openDialog')
 const dialog = document.querySelector('.dialog')
 const exitDialog = document.querySelector('.exitDialog')
 
+
 // Function for making "Book" objects //
-function Book(title, author, pages, status) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.status = status;
-    // this.info = function() {
-    //     return(this.title + ' by ' + this.author + ', ' + this.pages + ', ' + this.status);
-    // };
+class Book {
+    constructor(title, author, pages, status) {
+        this.title = title,
+        this.author = author,
+        this.pages = pages,
+        this.status = status
+    }
 }
 
 // Test Variable //
@@ -96,18 +96,6 @@ function tableEntry() {
                     clearTable();
                     tableEntry();
                 })
-                // Function to create a change status button with user prompt //
-                // const changeStatus = document.createElement('button');
-                // changeStatus.textContent = 'Change Status'
-                // changeStatus.type = 'button';
-                // changeStatus.className = 'changeStatus';
-                // tableData.appendChild(changeStatus)
-                // tableData > changeStatus.addEventListener('click', () => {
-                //     const newStatus = prompt('please select new reading status');
-                //     myLibrary[rowIndex].status = newStatus
-                //     clearTable();
-                //     tableEntry();
-                // })
 
                 // Function to create a select dropdown menu to select new reading status // 
                 const changeStatus = document.createElement('select')
@@ -124,9 +112,6 @@ function tableEntry() {
                     clearTable();
                     tableEntry();
                 })
-
-                // switch change status button to drop down menu with status options. 
-                // when users selects, change myLibraray[rowIndex].status
             }
             tableRow.appendChild(tableData);
         });
